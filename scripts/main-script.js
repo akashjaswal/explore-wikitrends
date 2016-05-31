@@ -55,7 +55,7 @@ var terms_6_year = {
 
 
 var Term_shorthand = {  DT:['Donald_Trump'],HC:['Hillary_Clinton'],BS:['Bernie_Sanders'],JK:['John_Kasich'],TC:['Ted_Cruz'],
-                        MF:['Megan_Fox'] ,SRK:['Shah_Rukh_Khan'],SP:['Sundar_Pichai'],JM:['Jack_Ma'],RG:['Ryan_Gosling'],SA:['Sam_Anderson_(Tamil_Actor)'],
+                        MF:['Megan_Fox'] ,SRK:['Shah_Rukh_Khan'],SP:['Sundar_Pichai'],JM:['Jack_Ma'],RG:['Ryan_Gosling'],SA:['Sam_Anderson_(Tamil_actor)'],
                         ST:['String_theory'],DL:['Deep_Learning'],AS:['Apache_Spark'],AH:["Apache_Hadoop"],ID:['Independence_Day_(United_States)'],
                         All_P:['Donald_Trump','Hillary_Clinton','Bernie_Sanders','John_Kasich','Ted_Cruz'],
                         All_GP: ['Megan_Fox' ,'Shah_Rukh_Khan','Sundar_Pichai','Jack_Ma','Ryan_Gosling'],
@@ -84,6 +84,7 @@ else
       }
     });
 }   
+console.log(filteredData);
 return filteredData;
 }
 
