@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/chosen.min.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="css/ui.slider.extras.css">
+<link rel="stylesheet" href="css/jquery-ui-1.7.1.custom.css">
+<link rel="stylesheet" href="css/tipsy.css">
+<link rel="stylesheet" href="css/c3.min.css">
+<link rel="stylesheet" href="css/nv.d3.min.css">
+<head>
+ <title>Explore Wikipedia Trends</title>
+</head>
+<body>
+
+	<div id="politicians-GT">
+  <div style="height:10px" class="headers">
+    Political Candidates -- Wikipedia Vs. Google Trends
+  </div>
+  <div style="height: 12px">
+  <ul class="gt-buttons">
+  <li>
+        <input type="radio" id="6_yrs_p" name="time-p" class='pol-time' checked="checked" value="6p" />
+        <label for="6_yrs_p">2010-16</label>
+    </li>
+    <li>
+        <input type="radio" id="1_yr_p" name="time-p" class='pol-time' value="1p" />
+        <label for="1_yr_p">Past 12 Months</label>
+    </li>
+  </ul>
+  </div>
+  <div>
+  <ul class="gt-buttons">
+    <li>
+        <input type="radio" id="All_P" class='pol-btn' name="politicians-bt" checked="checked" value="All_P" />
+        <label for="All_P">All Politicians</label>
+    </li>
+    <li>
+        <input type="radio" id="DT" class='pol-btn' name="politicians-bt" value="DT" />
+        <label for="DT">Donald Trump</label>
+    </li>
+    <li>
+        <input type="radio" id="HC" class='pol-btn' name="politicians-bt" value="HC" />
+        <label for="HC">Hillary Clinton</label>
+    </li>
+    <li>
+        <input type="radio" id="BS" class='pol-btn' name="politicians-bt" value="BS" />
+        <label for="BS">Bernie Sanders</label>
+    </li>
+    <li>
+        <input type="radio" id="TC" class='pol-btn' name="politicians-bt" value="TC" />
+        <label for="TC">Ted Cruz</label>
+    </li>
+    <li>
+        <input type="radio" id="JK" class='pol-btn' name="politicians-bt" value="JK" />
+        <label for="JK">John Kasich</label>
+    </li>
+</ul>
+</div>
+<div id="politicians-wiki" style="float: left; height: 350px; width: 600px;"></div>
+<div id="politicians-gt-chart" style="height:350px"></div>
+  </div>
+
+<br>
+<br>
+  
+<div id="Celebs-GT" style="margin-top:30px;">
+  <div style="height:10px" class="headers">
+    Celebrities and Personalities -- Wikipedia Vs. Google Trends
+  </div>
+  <div style="height: 12px">
+  <ul class="gt-buttons">
+  <li>
+        <input type="radio" id="6_yrs_gc" name="time-gc" class='pol-time' checked="checked" value="6p" />
+        <label for="6_yrs_gc">2010-16</label>
+    </li>
+    <li>
+        <input type="radio" id="1_yr_gc" name="time-gc" class='pol-time' value="1p" />
+        <label for="1_yr_gc">Past 12 Months</label>
+    </li>
+  </ul>
+  </div>
+  <div>
+  <ul class="gt-buttons">
+    <li>
+        <input type="radio" id="All_GP" class='gc-btn' name="gc-bt" checked="checked" value="All_GP" />
+        <label for="All_GP">All Celebrities</label>
+    </li>
+    <li>
+        <input type="radio" id="MF" class='gc-btn' name="gc-bt" value="MF" />
+        <label for="MF">Megan Fox</label>
+    </li>
+    <li>
+        <input type="radio" id="SRK" class='gc-btn' name="gc-bt" value="SRK" />
+        <label for="SRK">Shah Rukh Khan</label>
+    </li>
+    <li>
+        <input type="radio" id="RG" class='gc-btn' name="gc-bt" value="RG" />
+        <label for="RG">Ryan Gosling</label>
+    </li>
+    <li>
+        <input type="radio" id="SP" class='gc-btn' name="gc-bt" value="SP" />
+        <label for="SP">Sundar Pichai</label>
+    </li>
+    <li>
+        <input type="radio" id="JM" class='gc-btn' name="gc-bt" value="JM" />
+        <label for="JM">Jack Ma</label>
+    </li>
+    <li>
+        <input type="radio" id="SA" class='gc-btn' name="gc-bt" value="SA" />
+        <label for="SA">Sam Anderson</label>
+    </li>
+</ul>
+</div>
+<div id="gc-wiki" style="float: left; height: 350px; width: 600px;"></div>
+<div id="gc-gt-chart" style="height:350px"></div>
+  </div>
+
+  <br>
+  <br>
+
+  <div id="General-GT" style="margin-top:30px;">
+  <div style="height:10px" class="headers">
+    General Terms -- Wikipedia Vs. Google Trends
+  </div>
+  <div style="height: 12px">
+  <ul class="gt-buttons">
+  <li>
+        <input type="radio" id="6_yrs_gt" name="time-gt"  checked="checked" value="6p" />
+        <label for="6_yrs_gt">2010-16</label>
+    </li>
+    <li>
+        <input type="radio" id="1_yr_gt" name="time-gt"  value="1p" />
+        <label for="1_yr_gt">Past 12 Months</label>
+    </li>
+  </ul>
+  </div>
+  <div>
+  <ul class="gt-buttons">
+    <li>
+        <input type="radio" id="All_GT" class='gt-btn' name="gt-bt" checked="checked" value="All_GT" />
+        <label for="All_GT">All General Terms</label>
+    </li>
+    <li>
+        <input type="radio" id="AH" class='gt-btn' name="gt-bt" value="AH" />
+        <label for="AH">Apache Hadoop</label>
+    </li>
+    <li>
+        <input type="radio" id="AS" class='gt-btn' name="gt-bt" value="AS" />
+        <label for="AS">Apache Spark</label>
+    </li>
+    <li>
+        <input type="radio" id="DL" class='gt-btn' name="gt-bt" value="DL" />
+        <label for="DL">Deep Learning</label>
+    </li>
+    <li>
+        <input type="radio" id="ST" class='gt-btn' name="gt-bt" value="ST" />
+        <label for="ST">String Theory</label>
+    </li>
+    <li>
+        <input type="radio" id="ID" class='gt-btn' name="gt-bt" value="ID" />
+        <label for="ID">Independence Day (US)</label>
+    </li>
+</ul>
+</div>
+<div id="gt-wiki" style="float: left; height: 350px; width: 600px;"></div>
+<div id="gt-gt-chart" style="height:350px"></div>
+  </div>
+
+  <!-- <div id = "filters" style="height: 50px" class="filter">
+    <div style="width: 315px; margin-right: 20px; height: 45px; float: left" ><p>Year</p><div id = "slider1" style="width: 310px; class = "block" ></div></div>
+    <div style="width: 315px; margin-right: 10px; height: 45px; float: left" ><p>Population</p><div id = "slider2" style="width: 310px; class = "block" ></div></div>
+    <div style="width: 315px; height: 45px; float: left"><p style="margin-left: 15px">Color Scheme</p>
+    <div id="filter" class="dummy">
+      <select id = "color-filter" class = "color" style="width: 250px; margin-left: 10px;"></select>
+    </div></div>
+    <br><br>
+  </div>
+  <div id = "chart"></div>
+  <br><br> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="scripts/chosen.jquery.min.js"></script>
+  <script src="scripts/d3.min.js"></script>
+  <script src="scripts/c3.min.js"></script>
+  <script src="scripts/nv.d3.min.js"></script>
+  <script src="scripts/underscore-min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="scripts/selectToUISlider.jQuery.js"></script>
+    <script src="scripts/jquery.tipsy.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.6/postscribe.min.js"></script>
+    <script src="scripts/main-script.js"></script>
+
+</body>
+</html>

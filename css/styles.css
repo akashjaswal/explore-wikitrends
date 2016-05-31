@@ -1,0 +1,165 @@
+body {
+  font: 13px tahoma;
+  color: #7f8c8d;
+  margin: 30px;
+}
+
+
+.headers{
+ 
+background-color: #FFFFFF;
+  color: #95A5A6;
+  font-family: 'trebuchet ms';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  font-variant: small-caps;
+  letter-spacing: 1.3px;
+}
+
+
+.gt-buttons {
+     list-style-type:none;
+     margin:25px 0 0 0;
+     padding:0;
+}
+
+.gt-buttons li {
+    float:left;
+    margin:0 5px 0 0;
+    width:150px;
+    height:30px;
+    position:relative;
+}
+
+.gt-buttons label, .politicians-gt-buttons input {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    text-align: center;
+}
+
+.gt-buttons input[type="radio"] {
+    opacity:0.01;
+    z-index:100;
+}
+
+.gt-buttons input[type="radio"]:checked + label,
+.Checked + label {
+    background:#52a3fa;
+}
+
+/*.btn {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  background: #bac5cc;
+  padding: 8px 8px 8px 8px;
+  border: solid #9ed4f2 1px;
+  text-decoration: none;
+}*/
+/*
+.btn:hover {
+  background: #52a3fa;
+  text-decoration: none;
+}*/
+
+.gt-buttons label {
+     padding:5px;
+     border:1px solid #CCC; 
+     cursor:pointer;
+     z-index:90;
+     -webkit-border-radius: 6;
+     -moz-border-radius: 6;
+     border-radius: 6px;
+     font-family: Arial;
+     color: #ffffff;
+     font-size: 12px;
+     /*background: #bac5cc;*/
+      background: #6C7A89;
+     padding: 8px 8px 8px 8px;
+     border: solid #9ed4f2 0.5px;
+     text-decoration: none;
+}
+
+.gt-buttons label:hover {
+     background: #52a3fa;
+     text-decoration: none;
+}
+
+
+iframe{
+  width: 570px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+    width: 0.5px;
+}
+.axis text {
+    font: 8px sans-serif;
+    opacity: 0.6;
+}
+.row {
+    width: 100%;
+    text-align: center;
+}
+
+.block {
+    width: 100px;
+    display: inline-block;
+}
+
+
+#slider { 
+	margin: 10px;
+	align: center; }
+
+.left {
+    width: 30%;
+    float: left;
+    text-align: right;
+}
+.right {
+    width: 65%;
+    margin-left: 10px;
+    float:left;
+}
+
+
+
+.grid-background {
+  fill: #ddd;
+}
+
+.grid line,
+.grid path {
+  fill: none;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.grid .minor.tick line {
+  stroke-opacity: .5;
+}
+
+.brush .extent {
+  stroke: #000;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.filter{
+  clear:left;
+  height:25px;
+  margin: 20px;
+}
